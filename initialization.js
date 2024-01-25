@@ -9,7 +9,7 @@ let canvas = {
 };
 
 let displayFont;
-let priceFont;
+//let priceFont;
 let remadeBy;
 let fontSize;
 let signatureImg;
@@ -21,7 +21,7 @@ let logomode = false;
 
 function preload() {
   displayFont = loadFont("FuturaPassata-Trial.otf");
-  priceFont = loadFont("BEAUX Trial.otf");
+  //priceFont = loadFont("BEAUX Trial.otf");
   signatureImg = loadImage("Signatures/Signature_5.png");
 }
 

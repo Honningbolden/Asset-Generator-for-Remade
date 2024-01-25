@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi-Variable.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Futura Passata';
+  src: url('FuturaPassata-Trial.otf') format('opentype');
+}
+
+body {
+  font-family: 'Satoshi';
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.master-gui-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* You might want to add some padding or margin to position it exactly where you want */
+  padding: 10px;
+}
+
+#defaultCanvas0 {
+  display: flex;
+  margin: auto;
+  background-color: white;
+}
+
+#restart-button {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #1C334B;
+  color: white;
+  width: 220px;
+  margin: 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#restart-button:active {
+  background-color: #1c334bc3;
+  color: rgba(255, 255, 255, 0.799);
+}
+
+.settings-container {
+  width: 220px;
+  margin: 5px 60px 5px 0px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E79388;
+  border-radius: 8px;
+}
+
+.gui {
+  margin: 5px;
+  padding: 5px;
+}
+
+#num-particle-selection {
+  display: flex;
+  width: 160px;
+}
+
+#timeframe-selection {
+  display: flex;
+  width: 160px;
+}
+
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  box-sizing: border-box;
+  width: 145px;
+  height: 50px;
+  padding: auto;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  align-content: center;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* for Chrome, Safari, Opera */
+  margin: 0;
+}
+
+select {
+  appearance: none;
+  width: 160px;
+  height: 50px;
+  padding: auto;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  align-content: center;
+}
+
+button {
+  font-family: 'Satoshi';
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 22px;
+  background-color: #E79388;
+  border-style: none;
+  border-radius: 6px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Create a custom button */
+input[type="checkbox"]:checked + label {
+  width: 120px;
+  padding: 20px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #1C334B;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  align-content: center;
+}
+
+input[type="checkbox"] + label {
+  width: 120px;
+  padding: 20px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #1c334bc3;
+  color: rgba(255, 255, 255, 0.799);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  align-content: center;
+}
+
+.gui #text-checkbox {
+  font-family: 'Futura Passata';
+  font-size: 12px;
+  text-align: center;
+}
+
+.export-controls {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #1C334B;
+  color: white;
+  width: 220px;
+  margin: 5px 60px 5px 0px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.export-controls select {
+  margin: 5px;
+  height: 40px;
+  width: 100px;
+  text-align-last:center;
+}
+
+.export-controls button {
+  margin: 5px;
+  padding: 5px;
+  height: 40px;
+  width: 150px;
+}

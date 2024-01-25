@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="initialization.js"></script>
+    <script src="sketch.js"></script>
+    <script src="particle.js"></script>
+    <script src="smaller-particle.js"></script>
+    <script src="circle.js"></script>
+    <script src="target.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libraries/p5.capture.umd.min.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <div id="canvas-container">
+        
+      </div>
+
+    </main>
+    <section class="master-gui-container">
+      <button class="gui-bottom" id="restart-button">Kør igen</button>
+      <section class="settings-container">
+        <div class="gui" id="logomode-button">
+          <input type="checkbox" id="logomode-checkbox" name="logo-mode" value="true">
+          <label for="logomode-checkbox">Logo animation</label>
+        </div>
+        <select name="select-template" class="gui" id="template-selection">
+          <option value="squared">Kvadratisk</option>
+          <option value="landscape">Landskabe</option>
+          <option value="portrait">Portræt</option>
+          <option value="price-tag">Prismærkat</option>
+          <option value="postcard">Postkort</option>
+        </select>
+        <select name="select-designer" class="gui" id="palette-selection">
+          <option value="Remade">Remade</option>
+          <option value="Karla Karlsen">Karla Karlsen</option>
+          <option value="Anne-Sofie Annesen">Anne-Sofie Annesen</option>
+          <option value="Daniel Danielsen">Daniel Danielsen</option>
+          <option value="Ulrik Ulriksen">Ulrik Ulriksen</option>
+        </select>
+        <div class="gui">
+          <label for="num-particle-selection">Antal</label>
+          <input type="number" id="num-particle-selection" name="set-particle-num" min="1" max="20" value="4"/>
+        </div>
+        <div class="gui">
+          <input type="checkbox" id="text-checkbox" name="text-on-off" value="true">
+          <label for="text-checkbox">Logotype</label>
+        </div>
+        <select name="target-distribution" class="gui" id="target-distribution-setting">
+          <option value="text">Tekst</option>
+          <option value="box">Kasse</option>
+        </select>
+        <select name="target-mode" class="gui" id="target-mode-selection">
+          <option value="wander">Retningsløs</option>
+          <option value="seek">Opsøgende</option>
+          <option value="avoid">Undvigende</option>
+        </select>
+        <div>
+          <input type="checkbox" class="gui" id="boundary-setting" name="boundary-setting" value="true">
+          <label for="boundary-setting">Dynamiske kanter</label>
+        </div>
+        <div class="gui">
+          <label for="timeframe-selection">Levetid (sek.)</label>
+          <input type="number" id="timeframe-selection" name="set-timeframe" min="3" max="15" value="8"/>
+        </div>
+        <input type="checkbox" id="debug-checkbox" name="debug-mode" value="checkboxValue">
+        <label for="debug-checkbox">Debug Mode</label>
+      </section>
+      <section class="export-controls">
+        <button class="gui-bottom" id="save-button">Skærmbillede</button>
+        <select name="export-settings" class="gui-bottom" id="export-settings">
+          <option value="png">png</option>
+          <option value="mp4">mp4</option>
+        </select>
+      </section>
+    </section>
+  </body>
+</html>
